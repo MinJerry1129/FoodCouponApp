@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OptionViewCell" id="gTV-IL-0wX" customClass="OptionViewCell" customModule="foodoffer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIL-y5-9zj">
+                        <rect key="frame" x="2" y="2" width="160" height="160"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainpage_col" translatesAutoresizingMaskIntoConstraints="NO" id="f1Y-wL-eXB">
+                                <rect key="frame" x="-2" y="-2" width="164" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="f1Y-wL-eXB" secondAttribute="height" multiplier="1:1" id="1bh-1W-sCu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodtest" translatesAutoresizingMaskIntoConstraints="NO" id="5zT-ce-4yE">
+                                <rect key="frame" x="4" y="4" width="152" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-Lg-wUu">
+                                <rect key="frame" x="12" y="137" width="136" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f1Y-wL-eXB" firstAttribute="centerY" secondItem="eIL-y5-9zj" secondAttribute="centerY" id="5Aj-Yo-sKr"/>
+                            <constraint firstItem="5zT-ce-4yE" firstAttribute="height" secondItem="eIL-y5-9zj" secondAttribute="height" multiplier="0.8" id="OTl-RH-487"/>
+                            <constraint firstItem="HQq-Lg-wUu" firstAttribute="centerY" secondItem="eIL-y5-9zj" secondAttribute="centerY" multiplier="1.8" id="VbQ-s1-yBe"/>
+                            <constraint firstItem="HQq-Lg-wUu" firstAttribute="width" secondItem="eIL-y5-9zj" secondAttribute="width" multiplier="0.85" id="YZd-05-Dae"/>
+                            <constraint firstItem="5zT-ce-4yE" firstAttribute="centerY" secondItem="eIL-y5-9zj" secondAttribute="centerY" multiplier="0.85" id="ap8-XU-Vhv"/>
+                            <constraint firstItem="HQq-Lg-wUu" firstAttribute="centerX" secondItem="eIL-y5-9zj" secondAttribute="centerX" id="cpu-td-xHt"/>
+                            <constraint firstItem="5zT-ce-4yE" firstAttribute="width" secondItem="eIL-y5-9zj" secondAttribute="width" multiplier="0.95" id="kZv-Wf-a8c"/>
+                            <constraint firstItem="5zT-ce-4yE" firstAttribute="centerX" secondItem="eIL-y5-9zj" secondAttribute="centerX" id="nMt-Iv-I4Q"/>
+                            <constraint firstItem="f1Y-wL-eXB" firstAttribute="centerX" secondItem="eIL-y5-9zj" secondAttribute="centerX" id="yu9-z5-2dL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eIL-y5-9zj" secondAttribute="bottom" constant="2" id="E7t-SN-KW4"/>
+                <constraint firstItem="eIL-y5-9zj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="H7D-Rr-tEA"/>
+                <constraint firstAttribute="trailing" secondItem="eIL-y5-9zj" secondAttribute="trailing" constant="2" id="RU6-vY-ZOd"/>
+                <constraint firstItem="eIL-y5-9zj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Xb9-V2-7bV"/>
+                <constraint firstItem="f1Y-wL-eXB" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" id="Yls-NS-5yk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="164" height="164"/>
+            <connections>
+                <outlet property="foodImg" destination="5zT-ce-4yE" id="vG6-ko-bu4"/>
+                <outlet property="foodTitle" destination="HQq-Lg-wUu" id="TkN-LK-VaX"/>
+            </connections>
+            <point key="canvasLocation" x="-524.79999999999995" y="205.99700149925039"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="foodtest" width="600" height="500"/>
+        <image name="mainpage_col" width="567" height="567"/>
+    </resources>
+</document>
